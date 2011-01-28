@@ -1,0 +1,11 @@
+Development env on gentoo linux
+
+ipython (placed into ~/.ipython)
++ ipython shell will import virtualenv
+
+vimrc
++ setup for python syntax highlighting+spacing
++ autofolding
++ smart home key
+
+
