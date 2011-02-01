@@ -11,7 +11,8 @@ set number
 filetype on
 filetype plugin indent on
 set tw=76
-set foldmethod=indent
+"set foldmethod=indent
+set autochdir
 
 set tabpagemax=15 
 set showtabline=2 
@@ -19,7 +20,7 @@ set noerrorbells
 set nocompatible
 set si
 set cindent
-set mouse=a
+set mouse=r     "copy/paste with right btn
 set nowrap
 set incsearch
 set showmatch
@@ -41,7 +42,6 @@ set smartindent
 set softtabstop=4
 set shiftwidth=4
 
-
 "syntax
 "hi Comment ctermfg=green
 "hi PreProc ctermfg=magenta cterm=bold ctermfg
@@ -53,7 +53,12 @@ colorscheme koehler
 nnoremap <F2> :w <ENTER>
 nnoremap <silent> <c-l> :TlistToggle <ENTER>
 nnoremap <silent> <c-d> :NERDTreeToggle <ENTER>
+nnoremap <silent> <c-k> :TlistOpen <ENTER>
+"let Tlist_Auto_Open = 1
+"let Tlist_Use_SingleClick=1
 
+"SmartHome Function
+"home key jump btw start and first char 
 function! SmartHome()
   let s:col = col(".")
   normal! ^

@@ -16,7 +16,7 @@ fi
 
 
 # Put your fun stuff here.
-source ~/pydev/bin/activate
+source ~/dev/bin/activate
 
 alias git-log='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
 alias ip='ipython'
