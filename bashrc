@@ -17,6 +17,13 @@ fi
 
 # Put your fun stuff here.
 source ~/dev/bin/activate
+#export PATH=$PATH:~/github/play
+#export PYTHONPATH=$PYTHONPATH:~/github
 
 alias git-log='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
+alias gs='git status'
+alias g='git'
 alias ip='ipython'
+alias v='vim'
+alias n='nano -w'
+alias c='clear'

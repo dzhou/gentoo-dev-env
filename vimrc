@@ -42,6 +42,9 @@ set smartindent
 set softtabstop=4
 set shiftwidth=4
 
+:highlight ExtraWhitespace ctermbg=red guibg=red
+autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\t/
+
 "syntax
 "hi Comment ctermfg=green
 "hi PreProc ctermfg=magenta cterm=bold ctermfg
@@ -69,4 +72,7 @@ endfunction
 
 nnoremap <silent> <Home> :call SmartHome()<CR>
 inoremap <silent> <Home> <C-O>:call SmartHome()<CR>
+
+
+au BufEnter *.hs compiler ghci
 
