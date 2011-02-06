@@ -39,7 +39,6 @@ set textwidth=80
 set smarttab
 set expandtab
 set smartindent
-set softtabstop=4
 set shiftwidth=4
 
 :highlight ExtraWhitespace ctermbg=red guibg=red
@@ -75,4 +74,12 @@ inoremap <silent> <Home> <C-O>:call SmartHome()<CR>
 
 
 au BufEnter *.hs compiler ghci
+
+"Change tab size=2 for C/C++ (official formatting of boost)
+autocmd BufNewFile,BufRead *.hpp exe "set sw=2"
+autocmd BufNewFile,BufRead *.cpp exe "set sw=2"
+autocmd BufNewFile,BufRead *.h exe "set sw=2"
+
+
+
 
